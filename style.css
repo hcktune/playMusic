@@ -1,0 +1,102 @@
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgba(170, 167, 0, 0.568);
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+.music-buttons {
+    grid-area: sound;
+    text-align: center;
+}
+
+.sound-range {
+    width: 100%;
+    right: 0;
+    grid-area: slide;
+    text-align: right;
+    right: 100%;
+}
+
+.play-me {}
+
+#play {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.art-board {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "sound" "slide";
+    margin: 0 auto;
+    position: relative;
+    width: 30vw;
+    gap: 1em;
+    justify-items: center;
+    border: 5px groove rgba(138, 133, 65, 0.836);
+}
+
+img {
+    grid-area: img;
+    align-self: center;
+    width: 25vw;
+    padding: .750em;
+}
+
+input[type="button"] {
+    width: 2em;
+    height: 2em;
+    background-color: aliceblue;
+    font-weight: bolder;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: large;
+}
+
+.header {
+    box-sizing: border-box;
+    padding: 1em;
+    margin: .5em;
+    display: flex;
+    border: 1px inset #000000;
+}
+
+ul {
+    display: inherit;
+    justify-content: flex-end;
+    gap: 2.5em;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+}
+
+main {}
+
+main h2 {
+    text-align: center;
+}
